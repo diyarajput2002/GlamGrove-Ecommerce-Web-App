@@ -1,0 +1,113 @@
+.cFooterWrapper {
+    width: 100%;
+    margin-top: 5rem;
+}
+.cFooterWrapper hr {
+   width: 100%;
+   height: 1px;
+   border: none;
+   background-color: rgb(255, 255, 255);
+   margin-top: 1rem;
+}
+.cFooter {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.logo {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.logo span {
+    font-weight: 600;
+    font-size: 1rem;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 12rem;
+}
+.detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: inherit;
+    font-size: 0.7rem;
+    font-style: italic;
+    font-weight: 500;
+}
+.detail .topic {
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-style: normal;
+}
+.pngLine:hover {
+    cursor: pointer;
+}
+.pngLine {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+.icon {
+    width: 25px;
+}
+.copyRight {
+    display: flex;
+    flex-direction: column;
+    font-size: .7rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-weight: 500;
+}
+@media screen and (max-width: 856px) {
+    .cFooterWrapper {
+        margin-top: 1rem;
+        width: 108%;
+    }
+   
+    .cFooter {
+        width: 100%;
+        gap: .5rem;
+    }
+    .block {
+        width:8rem ;
+    }
+    .detail .topic {
+        font-size: 1rem;
+    }
+    .logo {
+        gap: .5rem;
+    }
+    .logo img {
+        width: 2rem;
+        height: 2rem;
+    }
+    .logo span {
+        font-size: .8rem;
+    }
+    .pngLine {
+        gap: .5rem;
+    }
+   
+}
+@media (max-width : 640px) {
+    .logo {
+        display: none;
+    }
+    .cFooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-left:4rem ;
+        gap: 2rem;
+    }
+    .cFooterWrapper hr {
+        width: 113%;
+    }
+}

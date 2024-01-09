@@ -1,0 +1,121 @@
+.container {
+    display: flex;
+    margin: 50px 175px 50px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cartcontainer {
+    width: 70%;
+}
+.payment {
+    width: 27%;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid silver;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.payment p {
+    color: rgb(61,61,61);
+    margin: 20px 20px 10px;
+}
+.payment p span {
+    color: #0bb5ff;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 50px 20px 10px;
+}
+.checkout {
+    background-color: #fe956f;
+    cursor: pointer;
+    display: inline-block;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+    margin-bottom: 20px;
+    box-shadow:  rgba(0 , 0 ,0 , 0.07) 0px 1px 1px,rgba(0 , 0 ,0 , 0.07) 0px 2px 2px
+    ,rgba(0 , 0 ,0 , 0.07) 0px 4px 4px,rgba(0 , 0 ,0 , 0.07) 0px 4px 8px
+    ,rgba(0 , 0 ,0 , 0.07) 0px 9px 16px;
+}
+.checkout:hover {
+    background-color: #fc7d4e;
+}
+.clear {
+    background-color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    color: #fe956f;
+    font-weight: bold;
+    padding: 7px 16px;
+    border: none;
+    transition: all 0.2s ease;
+    font-size: .83rem;
+}
+.clear:hover {
+    color: #fc7d4e;
+}
+
+.complete h3 {
+    color: #fc7d4e;
+    font-size: 1.2rem;
+    margin: 30px 30px 50px;
+}
+.complete a {
+    background-color: #0bb5ff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+    height: 30px;
+    width: fit-content;
+    padding: 0 10px;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 30px;
+    margin: 20px 30px ;
+    display: inline-block;
+    transition: all 0.2s ease;
+    box-shadow: rgba(50, 50, 93 , 0.25) 0px 4px 12px -2px ,
+    rgba(0 , 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.complete a:hover {
+    background-color: #0191d4;
+}
+@media (max-width: 1200px) {
+    .container {
+        margin: 120px 80px 50px;
+    }
+}
+
+@media (max-width: 1050px) {
+    .container {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin: 120px 80px 50px;
+    }
+    .cartcontainer {
+        width: 100%;
+    }
+    .payment {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+@media (max-width:768px) {
+    .container {
+        margin: 70px 0px 50px 60px;
+    }
+}
+@media (max-width:555px) {
+    .container {
+        margin: 70px 0px 50px 100px;
+    }
+}

@@ -1,0 +1,83 @@
+.s_container {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+}
+.s_container .swiper {
+    width: 75%;
+    height: 12rem;
+    position: unset;
+    
+}
+.s_container .swiper_slide {
+    background-color: white;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    justify-content: space-between;
+}
+.left_s {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.name {
+    display: flex;
+    flex-direction: column;
+}
+.name :nth-child(1) {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.name :nth-child(2) {
+    font-size: 0.7rem !important;
+}
+.left_s :nth-child(2) {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.left_s :nth-child(3) {
+    font-size: 0.6rem;
+    width: max-content;
+    border: 1px solid var(--black);
+    border-radius: 15px;
+    padding: 5px 10px;
+}
+.img_p {
+    transform: rotate(-20deg);
+    position: absolute;
+    bottom:-20% ;
+    right: -10%;
+    width: 40%;
+    height: 100%;
+}
+
+@media screen and (max-width : 856px) {
+    .s_container {
+        width: 100%;
+        padding-left: 2rem;
+    }
+    .s_container .swiper {
+        width: 90%;
+        gap: 1rem;
+        
+    }
+    .s_container .swiper_slide  {
+        width: 260px;
+    }
+    
+}
+@media (max-width : 640px) {
+    .s_container .swiper {
+        margin-left: 4rem;
+    }
+}
+@media (max-width : 440px) {
+    .s_container .swiper {
+        margin-left: 2.5rem;
+    }
+}
